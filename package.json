@@ -6,7 +6,12 @@
   "repository": "git@github.com:libuk/feelo.git",
   "author": "Daniel Liburd <daniel.liburd@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/feelo.js"
+  },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "dotenv": "^6.0.0",
+    "twit": "^2.2.10"
   }
 }
