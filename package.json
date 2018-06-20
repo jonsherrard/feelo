@@ -1,0 +1,12 @@
+{
+  "name": "feelo",
+  "version": "1.0.0",
+  "description": "A bot that sends encouraging gifs to people in need of cheering up.",
+  "main": "index.js",
+  "repository": "git@github.com:libuk/feelo.git",
+  "author": "Daniel Liburd <daniel.liburd@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
