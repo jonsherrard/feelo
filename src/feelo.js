@@ -1,5 +1,13 @@
-const findTweets = require('./find-tweets');
+const bot = require('./bot');
+const configTwitter = require('./config').twitter;
 
-require('dotenv').config();
+const chalk = require('chalk');
 
-findTweets();
+bot()
+  .get('search/tweets', { q: `"${configTwitter.keyphrase}"`, count: 5 })
+  .then(result =>
+    result.data.statuses.map(s => {
+      console.log('screen_name:', chalk.yellow(s.user.screen_name));
+      console.log('tweet:', chalk.cyan(s.text));
+    })
+  );
