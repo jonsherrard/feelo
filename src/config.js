@@ -9,5 +9,10 @@ module.exports = {
       access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
     },
     keyphrase: process.env.TWITTER_KEYPHRASE
+  },
+  giphy: {
+    keys: {
+      api_key: process.env.GIPHY_API_KEY
+    }
   }
 };
