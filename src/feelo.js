@@ -1,10 +1,10 @@
-const bot = require('./bot');
-const configTwitter = require('./config').twitter;
+const twitter = require('./twitter');
+const config = require('./config');
 
 const chalk = require('chalk');
 
-bot()
-  .get('search/tweets', { q: `"${configTwitter.keyphrase}"`, count: 5 })
+twitter
+  .search(config.twitter.keyphrase, 5)
   .then(result =>
     result.data.statuses.map(s => {
       console.log('screen_name:', chalk.yellow(s.user.screen_name));
