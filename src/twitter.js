@@ -17,6 +17,6 @@ const getScreenNames = response => {
 };
 
 module.exports = {
-  search: search,
-  getScreenNames: getScreenNames
+  search,
+  getScreenNames
 };
