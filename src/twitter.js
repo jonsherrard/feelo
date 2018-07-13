@@ -9,7 +9,7 @@ const twitter = new Twit({
 });
 
 const search = (query, count) => {
-  return twitter.get('search/tweets', { q: `"${query}"`, count: count });
+  return twitter.get('search/tweets', { q: `"${query}"`, count });
 };
 
 const getScreenNames = response => {
