@@ -11,9 +11,7 @@ module.exports = {
     keyphrase: process.env.TWITTER_KEYPHRASE
   },
   giphy: {
-    keys: {
-      api_key: process.env.GIPHY_API_KEY
-    },
+    api_key: process.env.GIPHY_API_KEY,
     ids: [process.env.GIPHY_GIF_ID_1, process.env.GIPHY_GIF_ID_2]
   }
 };
