@@ -5,12 +5,8 @@ const chalk = require('chalk');
 
 twitter
   .search(config.twitter.keyphrase, 5)
-  .then(result =>
-    result.data.statuses.map(s => {
-      console.log('screen_name:', chalk.yellow(s.user.screen_name));
-      console.log('tweet:', chalk.cyan(s.text));
-    })
-  )
+  .then(twitter.getScreenNames)
+  .then(sn => sn.map(s => console.log(chalk.cyan(s))))
   .catch(err => {
     throw new Error(err);
   });

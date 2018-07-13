@@ -12,6 +12,11 @@ const search = (query, count) => {
   return twitter.get('search/tweets', { q: `"${query}"`, count: count });
 };
 
+const getScreenNames = response => {
+  return response.data.statuses.map(s => s.user.screen_name);
+};
+
 module.exports = {
-  search: search
+  search: search,
+  getScreenNames: getScreenNames
 };
