@@ -22,7 +22,7 @@ bot
      */
     const userData = res.data.statuses.map(s => ({
       username: `@${s.user.screen_name}`,
-      status_id: s.id
+      status_id: s.id_str
     }));
 
     userData.forEach(async u => {
