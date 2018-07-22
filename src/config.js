@@ -10,5 +10,5 @@ module.exports = {
     },
     keyphrase: process.env.TWITTER_KEYPHRASE
   },
-  gifs: ['static/hug_0.gif', 'static/hug_1.gif']
+  gifs: ['static/hug_0.gif', 'static/hug_1.gif', 'static/hug_2.gif' ]
 };
