@@ -15,7 +15,7 @@ const getRandomGif = () => {
 };
 
 bot
-  .get('search/tweets', { q: `"${config.twitter.keyphrase}"`, count: 3 })
+  .get('search/tweets', { q: `"${config.twitter.keyphrase}"`, count: 5 })
   .then(res => {
     /**
      * User Data
